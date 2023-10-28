@@ -452,3 +452,25 @@
 		font-size: 1.2em;
 		color: #FFF;
 	}
+
+	/** Estils per rotar les imatges dels elements amb classe ".box" */
+	.box a:hover > img {
+		position: relative;
+		z-index: -1;
+		animation-name: rotarImatge;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		border-radius: 50%;
+	}
+	
+	@keyframes rotarImatge {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg);
+		}
+	}
