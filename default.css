@@ -474,3 +474,26 @@
 			transform: rotate(360deg);
 		}
 	}
+
+
+	/** Estils per canviar el color de fons del text <span> quan el ratoli
+	es trobi sobre l'element <a> de les clases '.box' */
+	.box a:hover + span {
+		animation-name: canviarColorFons;
+		animation-duration: 1s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	@keyframes canviarColorFons {
+		from {
+			background-color: #8dc63f;
+			border-radius: 0px;
+		}
+
+		to {
+			background-color: blue;
+			border-radius: 25px;
+		}
+	}
