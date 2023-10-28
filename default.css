@@ -315,6 +315,27 @@
 		background: url(images/banner.jpg) no-repeat center;
 		background-size: cover;
 		border-top: 1px solid rgba(0,0,0,0.08);
+		position: relative;
+	}
+
+	#banner > img {
+		animation-name: moureCotxe;
+		animation-duration: 2s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		position: absolute;
+		bottom: 1em;
+	}
+
+	@keyframes moureCotxe {
+		from {
+			left: 0%;
+		}
+
+		to {
+			left: 100%;
+		}
 	}
 
 /*********************************************************************************/
